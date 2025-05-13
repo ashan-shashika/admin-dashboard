@@ -18,6 +18,8 @@ import Blank from "./pages/Blank";
 import AppLayout from "./layout/AppLayout";
 import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./pages/Dashboard/Home";
+import UsersList from "./pages/Users/UsersList";
+import VehiclesList from "./pages/Vehicles/VehiclesList";
 
 export default function App() {
   return (
@@ -39,6 +41,8 @@ export default function App() {
 
             {/* Tables */}
             <Route path="/basic-tables" element={<BasicTables />} />
+            <Route path="/users" element={<UsersList />} />
+            <Route path="/vehicles" element={<VehiclesList />} />
 
             {/* Ui Elements */}
             <Route path="/alerts" element={<Alerts />} />
