@@ -50,6 +50,15 @@ const navItems: NavItem[] = [
     path: "/vehicles",
   },
   {
+    name: "Inventory",
+    icon: <ListIcon />,
+    subItems: [
+      { name: "Add Item", path: "/inventory" },
+      { name: "List", path: "/inventory-list" },
+      { name: "Invoice", path: "/add-invoice" },
+    ],
+  },
+  {
     name: "Forms",
     icon: <ListIcon />,
     subItems: [{ name: "Form Elements", path: "/form-elements", pro: false }],

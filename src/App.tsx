@@ -20,6 +20,10 @@ import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./pages/Dashboard/Home";
 import UsersList from "./pages/Users/UsersList";
 import VehiclesList from "./pages/Vehicles/VehiclesList";
+import InventoryPage from "./pages/Inventory/Invenroty";
+import InventoryListPage from "./pages/Inventory/InventoryListPage";
+import MultiStepFormWrapper from "./components/PurchaseInvoice/formWrapper";
+import InvoiceHistoryPage from "./pages/InvoiceHistory/InvoiceHistory";
 
 export default function App() {
   return (
@@ -43,6 +47,10 @@ export default function App() {
             <Route path="/basic-tables" element={<BasicTables />} />
             <Route path="/users" element={<UsersList />} />
             <Route path="/vehicles" element={<VehiclesList />} />
+            <Route path="/inventory" element={<InventoryPage />} />
+            <Route path="/inventory-list" element={<InventoryListPage />} />
+            <Route path="/add-invoice" element={<MultiStepFormWrapper />} />
+            <Route path="/part-history" element={<InvoiceHistoryPage />} />
 
             {/* Ui Elements */}
             <Route path="/alerts" element={<Alerts />} />
